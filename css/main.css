@@ -1,0 +1,44 @@
+body {
+	background: url(../img/space.jpg);
+	background-sze: cover;
+	margin: 12% 5% 0 5%;
+}
+.container {
+	background: mediumpurple;
+}
+h1 {
+	color: #fff;
+	font-family: serif;
+	font-size: 2.6rem;
+	text-align: center;
+	padding-top: 30px;
+}
+input {
+	display: block;
+	width: 70%;
+	margin: 3% 12.5% 5% 12.5%;
+	padding: 2%;
+}
+textarea {
+	width: 74%;
+	margin-left: 12.5%;
+}
+button {
+	padding: 10px;
+	margin: 5% 0 5% 12.5%;
+	background-color: #000;
+	border: none;
+	color: #fff;
+}
+
+@media (min-width: 550px) {
+	input {
+		width: 50%;
+	}
+	textarea {
+		width: 54%;
+	}
+	input, textarea, button {
+		margin-left: 22.5%;
+	}
+}

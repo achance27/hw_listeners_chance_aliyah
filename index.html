@@ -9,8 +9,24 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-
+	<div class="container">
+		<main>
+			<h1>Form</h1>
+			<form name="form" method="post" action="form.php" onsubmit="return validateForm(this)">
+				<article>
+					<input name="firstname" type="text" id="first" placeholder="First Name"/>
+					<input name="lastname" type="text" id="last" placeholder="Last Name"/>
+		      <input name="email_address" type="email" id="email" placeholder="Email" required/>
+			</article>
+				<article>
+				 <textarea name="message" id="message" placeholder="Your Message" style="height:250px" required></textarea>
+			 </article>
+				<article>
+				  <button type="submit" name="submit" value="submit">SUBMIT</button>
+				</article>
+			</form>
+		</main>
+	</div>
 
     <script src="js/main.js"></script>
 </body>

@@ -1,24 +1,12 @@
-/*var userFirstName = document.getElementById('first');
-input.addEventListener('sumbit', function () {
-	event.preventDefault();
-	console.log(userFirstName.innerText)
-}
-*/
-//39:00
-/*
-document.querySelector('#first').addEventListener('submit', function (event) {
-	document.getElementsbyTagName('form')[0].innerText;
-	event.preventDefault();
-	console.log(event);
-});
+var userFirst = document.getElementById('first');
+var userLast = document.getElementById('last');
+var contactInfo = document.getElementById('email');
+var message = document.getElementById('message');
 
-var submitButton = document.getElementsByTagName('input');
-
-submitButton.addEventListener('submit', function (eventInfo) {
-    eventInfo.preventDefault();
-    console.log(eventInfo);
-}); */
-
-document.getElementById('first').addEventListener('submit', function (event) {
+document.addEventListener('sumbit', function () {
+    console.log('The firstName is:' + '' + userFirst.value);
+    console.log('The lastName is:' + '' + userLast.value);
+    console.log('The email is:' + '' + contactInfo.value);
+    console.log('The message is:' + '' + message.value);
     event.preventDefault();
 });

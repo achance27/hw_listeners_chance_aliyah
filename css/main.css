@@ -1,11 +1,47 @@
 #container {
 	margin: 5%;
 }
+.color {
+	color: purple;
+}
+.switch {
+	color: teal;
+	font-family: 'Fontdiner Swanky', cursive;
+}
+.color2 {
+	color: #000;
+	font-family: 'Fontdiner Swanky', cursive;
+}
 h1 {
 	font-family: 'Bangers', cursive;
-	font-size: 4rem;
-	color: #080696;
+	font-size: 4.5rem;
+	color: #1f9604;
 }
 .crazy {
 	font-family: 'Fontdiner Swanky', cursive;
+}
+h2 {
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.9rem;
+}
+.fl {
+	color: purple;
+}
+.ca {
+	color: teal;
+}
+#question {
+	font-family: 'Bangers', cursive;
+	font-size: 2.5rem;
+	color: gray;
+}
+p, li {
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.3rem;
+}
+p {
+	color: #1f9604;
+}
+.white {
+	color: white;
 }

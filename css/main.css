@@ -1,16 +1,22 @@
 #container {
-	margin: 5%;
+	margin: 3%;
+	padding: 3%;
+	border-style: dotted;
+	border-color: #8e057e;
 }
 .color {
 	color: purple;
+	text-shadow: 3px 2px 6px #FFC526;
 }
 .switch {
 	color: teal;
 	font-family: 'Fontdiner Swanky', cursive;
+	text-shadow: 3px 2px 6px #FF6E19;
 }
 .color2 {
-	color: #000;
+	color: gray;
 	font-family: 'Fontdiner Swanky', cursive;
+	text-shadow: 3px 2px 6px #AD32AD;
 }
 h1 {
 	font-family: 'Bangers', cursive;
@@ -30,10 +36,13 @@ h2 {
 .ca {
 	color: teal;
 }
+.mi {
+	color: gray;
+}
 #question {
 	font-family: 'Bangers', cursive;
 	font-size: 2.5rem;
-	color: gray;
+	color: #db9f08;
 }
 p, li {
 	font-family: 'Barlow', sans-serif;
@@ -42,9 +51,23 @@ p, li {
 p {
 	color: #1f9604;
 }
+button {
+	padding: 5px;
+}
+button:hover {
+	color: #fff;
+	background-color: #db9f08;
+}
 .white {
 	color: white;
+	font-size: 2rem;
 }
 .disappear {
 	color: #000;
+}
+
+@media (min-width: 940px) {
+	#container {
+		margin: 5% 18% 5% 18%;
+	}
 }

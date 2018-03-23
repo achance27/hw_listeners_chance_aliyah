@@ -1,10 +1,10 @@
-// Headline changes
+// Headline crazy changes
 var pageHeading = document.getElementsByTagName('h1')['0'];
 var flo = document.getElementsByTagName('h2')['0'];
 var cal = document.getElementsByTagName('h2')['1'];
 var mich = document.getElementsByTagName('h2')['2'];
-var wow = document.getElementsByTagName('h2')['3'];
 
+// When users mouseover the headline it changes to a crazy font
 pageHeading.addEventListener('mouseover', function () {
     pageHeading.className = 'crazy';
 });
@@ -23,11 +23,6 @@ cal.addEventListener('mouseover', function () {
 mich.addEventListener('mouseover', function () {
     pageHeading.className = 'color2';
 });
-
-wow.addEventListener('mouseover', function () {
-	document.getElementsByClassName = 'disappear';
-}
-
 
 /*
 var paragraph = document.getElementsByTagName('h1')['0'];
@@ -53,22 +48,35 @@ moreInfo.addEventListener('dblclick', function () {
 });
 */
 
-// Where users click on the "Not really..." button the background changes color revealing a message
-document.getElementById('no').addEventListener('click', function () {
-    document.body.style.backgroundColor = 'black';
-});
-/*
-document.getElementById('no').addEventListener('click', function () {
+// Where users double click on the "Not really..." button the background changes color revealing a message
+document.getElementById('no').addEventListener('dblclick', function () {
     document.body.style.backgroundColor = 'black';
 });
 
-/*
-var disappear = document.getElementsByClassName('disappear');
-var disapper. = document.getElementById('question').addEventListener('mouseover', function () {
-    document.className = 'disappear';
-}); */
+// Users that click on the "Yes, definitely!" button are given a link for more weird laws
+document.getElementById('yes').addEventListener('click', function () {
+    var learn = document.createElement('p');
+    learn.innerHTML = '<p>click <a href="http://www.dumblaws.com/"> here<a> for more laws!</p>';
+    document.getElementsByTagName('h2')[3].appendChild(learn);
+});
 
-var onScroll = document.getElementsByTagName('h2');
-window.addEventListener('scroll', function () {
+/*
+var mich2 = document.getElementById('no').addEventListener('click', function () {
+    document.h2[3].style.color = 'white';
+});
+
+mich2.addEventListener('mouseover', function () {
+    pageHeading.className = 'color2';
+});
+
+
+var selection = document.getElementsByTagName('p')[0];
+selection.addEventListener('select', function () {
+    this.style.backgroundColor = 'yellow';
+});
+
+var learn = document.getElementById('yes');
+button.addEventListener('click', function () {
 
 }
+*/

@@ -62,8 +62,9 @@ button:hover {
 	color: white;
 	font-size: 2rem;
 }
-.disappear {
-	color: #000;
+#really {
+	width: 80%;
+	max-width: 400px;
 }
 
 @media (min-width: 940px) {

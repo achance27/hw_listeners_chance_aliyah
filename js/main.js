@@ -24,30 +24,6 @@ mich.addEventListener('mouseover', function () {
     pageHeading.className = 'color2';
 });
 
-/*
-var paragraph = document.getElementsByTagName('h1')['0'];
-
-paragraph.addEventListener('click', function () {
-    pageHeading.className = 'crazy';
-});
-/*
-var backgroundColor = window.getElementById('container');
-
-backgroundColor.addEventListener('resize', function () {
-    backgroundColor.className = 'color';
-});
-
-
-//
-var moreInfo = document.getElementById('yes');
-
-moreInfo.addEventListener('dblclick', function () {
-    var myLink = document.createElement('p');
-    myLink.innerHTML = '<p>For more information click <a href>here</a></p>';
-    document.getElementById('container').appendChild(myLink);
-});
-*/
-
 // Where users double click on the "Not really..." button the background changes color revealing a message and a baby meme
 document.getElementById('no').addEventListener('dblclick', function () {
     document.body.style.backgroundColor = 'black';
@@ -64,31 +40,3 @@ document.getElementById('yes').addEventListener('click', function () {
     learn.innerHTML = '<p>click <a href="http://www.dumblaws.com/"> here<a> for more laws!</p><img src="./img/nologic.jpg" alt="no logic meme" id="logic">';
     document.getElementsByTagName('h2')[3].appendChild(learn);
 });
-
-/*
-var mich2 = document.getElementById('no').addEventListener('click', function () {
-    document.h2[3].style.color = 'white';
-});
-
-mich2.addEventListener('mouseover', function () {
-    pageHeading.className = 'color2';
-});
-
-
-var selection = document.getElementsByTagName('p')[0];
-selection.addEventListener('select', function () {
-    this.style.backgroundColor = 'yellow';
-});
-
-var learn = document.getElementById('yes');
-button.addEventListener('click', function () {
-
-}
-
-
-window.addEventListener('resize', function () {
-    function image() {
-			var meme =
-		}
-}
-*/

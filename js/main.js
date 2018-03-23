@@ -9,7 +9,7 @@ pageHeading.addEventListener('mouseover', function () {
     pageHeading.className = 'crazy';
 });
 
-// When users mouseover the headline it changes to a original font but color
+// When users mouseover "Florida" the headline it changes to a original font but color
 flo.addEventListener('mouseover', function () {
     pageHeading.className = 'color';
 });
@@ -24,19 +24,34 @@ mich.addEventListener('mouseover', function () {
     pageHeading.className = 'color2';
 });
 
-// Where users double click on the "Not really..." button the background changes color revealing a message and a baby meme
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+// Where users double click on the "Not really..." button the background changes color revealing a message
 document.getElementById('no').addEventListener('dblclick', function () {
     document.body.style.backgroundColor = 'black';
 });
+
+// Same button also gives you a judging baby meme
 document.getElementById('no').addEventListener('dblclick', function () {
     var ohReally = document.createElement('p');
     ohReally.innerHTML = '<img src="./img/ohreally.jpg" alt="Oh Really Meme" id="really">';
     document.getElementsByTagName('p')[1].appendChild(ohReally);
 });
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
 // Users that click on the "Yes, definitely!" button are given a link for more weird laws and a meme
 document.getElementById('yes').addEventListener('click', function () {
     var learn = document.createElement('article');
     learn.innerHTML = '<p>click <a href="http://www.dumblaws.com/"> here<a> for more laws!</p><img src="./img/nologic.jpg" alt="no logic meme" id="logic">';
     document.getElementsByTagName('h2')[3].appendChild(learn);
 });
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+// Press any key to return page back to white
+document.getElementsByTagName('body')[0].addEventListener('keydown', back2Normal);
+
+function back2Normal() {
+    document.body.style.backgroundColor = 'white';
+}
